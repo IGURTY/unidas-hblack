@@ -178,22 +178,9 @@ export default function CarOffersDashboard() {
 
   return (
     <div className="min-h-screen bg-surface p-3 sm:p-6 space-y-4 sm:space-y-6">
-      {/* Banner com imagem PNG */}
+      {/* Banner azul/gradiente sem imagem nem textos */}
       <div className="relative w-full rounded-xl overflow-hidden mb-4 sm:mb-6">
-        <div className="bg-gradient-to-br from-primary/90 via-accent/80 to-surface-muted/80 p-8 sm:p-12 flex flex-col items-center justify-center min-h-[180px] sm:min-h-[240px] shadow-lg">
-          <img
-            src="/placeholder.svg"
-            alt="Banner"
-            className="w-32 h-32 sm:w-44 sm:h-44 object-contain mb-4 drop-shadow-lg"
-            style={{ background: "transparent" }}
-          />
-          <h1 className="text-3xl sm:text-5xl font-extrabold text-primary-foreground drop-shadow-lg text-center">
-            Auto Offer Explorer
-          </h1>
-          <p className="mt-2 text-base sm:text-xl text-primary-foreground/90 text-center font-medium">
-            Descubra as melhores ofertas de veículos
-          </p>
-        </div>
+        <div className="bg-gradient-to-br from-primary/90 via-accent/80 to-surface-muted/80 p-8 sm:p-12 min-h-[60px] sm:min-h-[100px] shadow-lg" />
       </div>
 
       {/* Instructions Card */}
