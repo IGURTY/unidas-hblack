@@ -1,0 +1,158 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Auto Offer Explorer Design System - Automotive Dashboard Theme */
+
+@layer base {
+  :root {
+    /* Background & Surfaces */
+    --background: 210 20% 98%;
+    --foreground: 215 25% 15%;
+    --surface: 210 15% 96%;
+    --surface-muted: 210 12% 94%;
+
+    /* Card System */
+    --card: 0 0% 100%;
+    --card-foreground: 215 25% 15%;
+    --card-hover: 210 25% 97%;
+
+    /* Automotive Primary - Deep Blue */
+    --primary: 210 85% 45%;
+    --primary-foreground: 210 40% 98%;
+    --primary-hover: 210 85% 40%;
+    --primary-muted: 210 60% 92%;
+
+    /* Secondary - Steel Blue */
+    --secondary: 215 20% 88%;
+    --secondary-foreground: 215 25% 25%;
+    --secondary-hover: 215 25% 85%;
+
+    /* Accent - Electric Blue */
+    --accent: 200 95% 55%;
+    --accent-foreground: 200 40% 98%;
+    --accent-muted: 200 80% 95%;
+
+    /* Success - Racing Green */
+    --success: 145 65% 45%;
+    --success-foreground: 145 40% 98%;
+    --success-muted: 145 60% 95%;
+
+    /* Warning - Performance Gold */
+    --warning: 45 85% 55%;
+    --warning-foreground: 45 40% 15%;
+    --warning-muted: 45 80% 95%;
+
+    /* Muted Colors */
+    --muted: 215 15% 92%;
+    --muted-foreground: 215 15% 45%;
+
+    /* Interactive Elements */
+    --popover: 0 0% 100%;
+    --popover-foreground: 215 25% 15%;
+
+    --destructive: 0 75% 55%;
+    --destructive-foreground: 210 40% 98%;
+
+    --border: 215 20% 88%;
+    --input: 215 20% 88%;
+    --ring: 210 85% 45%;
+
+    /* Gradients */
+    --gradient-primary: linear-gradient(135deg, hsl(210 85% 45%), hsl(200 95% 55%));
+    --gradient-success: linear-gradient(135deg, hsl(145 65% 45%), hsl(120 70% 50%));
+    --gradient-surface: linear-gradient(180deg, hsl(210 15% 96%), hsl(210 12% 94%));
+    --gradient-card: linear-gradient(135deg, hsl(0 0% 100%), hsl(210 25% 97%));
+
+    /* Shadows */
+    --shadow-card: 0 2px 8px hsl(215 25% 15% / 0.08);
+    --shadow-elevated: 0 8px 32px hsl(215 25% 15% / 0.12);
+    --shadow-primary: 0 4px 16px hsl(210 85% 45% / 0.25);
+
+    /* Animations */
+    --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    --transition-fast: all 0.15s ease-out;
+
+    --radius: 0.5rem;
+
+    --sidebar-background: 0 0% 98%;
+
+    --sidebar-foreground: 240 5.3% 26.1%;
+
+    --sidebar-primary: 240 5.9% 10%;
+
+    --sidebar-primary-foreground: 0 0% 98%;
+
+    --sidebar-accent: 240 4.8% 95.9%;
+
+    --sidebar-accent-foreground: 240 5.9% 10%;
+
+    --sidebar-border: 220 13% 91%;
+
+    --sidebar-ring: 217.2 91.2% 59.8%;
+  }
+
+  .dark {
+    /* Background & Surfaces */
+    --background: 215 25% 8%;
+    --foreground: 210 40% 98%;
+    --surface: 215 20% 10%;
+    --surface-muted: 215 18% 12%;
+
+    /* Card System */
+    --card: 215 20% 10%;
+    --card-foreground: 210 40% 98%;
+    --card-hover: 215 25% 12%;
+
+    /* Automotive Primary - Bright Blue */
+    --primary: 200 95% 65%;
+    --primary-foreground: 200 40% 15%;
+    --primary-hover: 200 95% 70%;
+    --primary-muted: 200 60% 15%;
+
+    /* Secondary - Dark Steel */
+    --secondary: 215 15% 20%;
+    --secondary-foreground: 210 40% 98%;  
+    --secondary-hover: 215 20% 25%;
+
+    /* Accent - Electric Blue */
+    --accent: 200 95% 65%;
+    --accent-foreground: 200 40% 15%;
+    --accent-muted: 200 60% 15%;
+
+    /* Success - Bright Green */
+    --success: 145 70% 55%;
+    --success-foreground: 145 40% 15%;
+    --success-muted: 145 60% 15%;
+
+    /* Warning - Gold */
+    --warning: 45 90% 65%;
+    --warning-foreground: 45 40% 15%;
+    --warning-muted: 45 60% 15%;
+
+    /* Muted Colors */
+    --muted: 215 15% 18%;
+    --muted-foreground: 215 15% 65%;
+
+    /* Interactive Elements */
+    --popover: 215 20% 10%;
+    --popover-foreground: 210 40% 98%;
+
+    --destructive: 0 75% 65%;
+    --destructive-foreground: 210 40% 98%;
+
+    --border: 215 20% 20%;
+    --input: 215 20% 20%;
+    --ring: 200 95% 65%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+  }
+}
