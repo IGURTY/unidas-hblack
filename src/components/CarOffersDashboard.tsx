@@ -178,42 +178,20 @@ export default function CarOffersDashboard() {
 
   return (
     <div className="min-h-screen bg-surface p-3 sm:p-6 space-y-4 sm:space-y-6">
-      {/* Header */}
-      <div className="space-y-4">
-        <div className="flex flex-col sm:flex-row items-start sm:items-center gap-3">
-          <div className="flex items-center gap-3 flex-1">
-            <div className="p-3 bg-gradient-to-br from-primary to-accent rounded-xl">
-              <Car className="h-6 w-6 sm:h-8 sm:w-8 text-primary-foreground" />
-            </div>
-            <div className="flex-1">
-              <h1 className="text-2xl sm:text-3xl font-bold text-foreground">Auto Offer Explorer</h1>
-              <p className="text-sm sm:text-base text-muted-foreground">Descubra as melhores ofertas de veículos</p>
-            </div>
-          </div>
-          <Button
-            variant="outline"
-            onClick={() => {
-              setFilters({
-                modelo: "",
-                cor: "",
-                kmMin: "",
-                kmMax: "",
-                priceMin: "",
-                priceMax: "",
-                discountMin: "",
-                discountMax: "",
-              });
-              setWeights({ year: 33, km: 33, discount: 34 });
-            }}
-            className="flex items-center gap-2 w-full sm:w-auto"
-            size="sm"
-          >
-            <TrendingUp className="h-4 w-4" />
-            <span className="sm:inline">Resetar Tudo</span>
-          </Button>
+      {/* Banner */}
+      <div className="relative w-full rounded-xl overflow-hidden mb-4 sm:mb-6">
+        <div className="bg-gradient-to-br from-primary/90 via-accent/80 to-surface-muted/80 p-8 sm:p-12 flex flex-col items-center justify-center min-h-[160px] sm:min-h-[220px] shadow-lg">
+          <h1 className="text-3xl sm:text-5xl font-extrabold text-primary-foreground drop-shadow-lg text-center">
+            Auto Offer Explorer
+          </h1>
+          <p className="mt-2 text-base sm:text-xl text-primary-foreground/90 text-center font-medium">
+            Descubra as melhores ofertas de veículos
+          </p>
         </div>
-        
-        {/* Instructions Card */}
+      </div>
+
+      {/* Instructions Card */}
+      <div className="space-y-4">
         <Card className="bg-primary-muted/50 border-primary/20">
           <CardContent className="p-3 sm:p-4">
             <div className="flex flex-col sm:flex-row items-start gap-3">
